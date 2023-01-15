@@ -99,4 +99,45 @@ const mostCommonWithTies = (array) => {
   return resultArray;
 };
 
-console.log(mostCommonWithTies(arrayOfStrings));
+// console.log(mostCommonWithTies(arrayOfStrings));
+
+/* Count all occurrences of every word in a string */
+const wordString =
+  'Every good boy; does fine. Every good boy does fine. Every good boy does? fine. Every! good boy does fine. Every good boy does.';
+
+// solution
+const countAllWords = (string) => {
+  if (!string.length) return;
+
+  const wordArray = string
+    .toLowerCase()
+    .replace(/([.!?,;])/g, '')
+    .replace(/[\s]{2,}/g, ' ')
+    .split(' ');
+
+  const countObj = {};
+
+  wordArray.forEach((word) => {
+    countObj[word] ? (countObj[word] += 1) : (countObj[word] = 1);
+  });
+
+  return countObj;
+};
+
+console.log(countAllWords(wordString));
+
+/* Return the most common word in a string */
+// solution
+const mostCommonWord = (string) => {
+  if (!string.length) return;
+
+  const wordArray = string
+    .toLowerCase()
+    .replace(/([.!?,;])/g, '')
+    .replace(/[\s]{2,}/g, ' ')
+    .split(' ');
+
+  return mostCommonWithTies(wordArray);
+};
+
+console.log(mostCommonWord(wordString));
