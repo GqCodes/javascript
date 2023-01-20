@@ -1,5 +1,5 @@
 /* Spread Operator */
-// The ability to take an element and split it into individual elements or take a bunch of elements and combine them into a single array
+// The ability to take an element and split it into individual elements or take a bunch of elements and combine them into a single element
 
 /* EX 1 adding elements from 1 array into another array as individual elements broken out of it's original array */
 let nums1 = [1, 2, 3];
@@ -22,14 +22,14 @@ function myFunc2(beerList) {
 }
 myFunc2(beers);
 
-/* Rest Operator: works the opposite of spread. It essentially collects multiple elements and puts them all into a single element(array in the case below) */
+/* Rest Operator: works the opposite to spread. It essentially collects multiple elements and puts them all into a single element(array in the case below) */
 function myOtherFunc(age, name, ...list2) {
   console.log(`${name} is ${age}`);
   list2.forEach((item, index) => console.log(index, item));
 }
 myOtherFunc(35, 'Waldo', 'some text', beers, stuff);
 
-/* EX 3 suing spread with OBJECTS */
+/* EX 3 using spread with OBJECTS */
 const ballPlayer = {
   name: 'Jalen Hurts',
   height: '6 ft',

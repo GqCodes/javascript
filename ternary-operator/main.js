@@ -1,17 +1,16 @@
 /* Ternary Operator */
 // a three part tool for making decisions with JS
 
-// Syntax: shorthand for ifelse
+// Syntax: shorthand for ifElse
 // condition ? ifTrue : ifFalse;
 
 /* EX 1: determine if there is soup today */
 let soup = 'Chicken Noodle Soup';
 let response = soup ? 'Yes we have soup today' : 'Sorry, no soup today';
 console.log(response);
-// in the example: if soup is defined the the response is "Yes we have soup today", BUT if soup is blank or undefined then the response would be "Sorry, no soup today"
+// in this example: if soup is defined then the response is "Yes we have soup today", BUT if soup is blank or undefined then the response would be "Sorry, no soup today"
 
 // can also chain ternary operators as well
-
 /*  Ex 2: building upon EX 1 */
 let customerIsBanned = false;
 let soupAccess = customerIsBanned ? 'Sorry no soup for you!' : soup ? `Yes, we have ${soup} today` : `Sorry no ${soup} today`;
