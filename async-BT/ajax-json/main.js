@@ -9,7 +9,7 @@ function loadCustomer(e) {
   xhr.onload = function () {
     if (this.status === 200) {
       // console.log(this.responseText);
-      const customer = JSON.parse(this.responseText); //the reason we do this is to have access to the data, because it's really just a json string, and we can't access it like customer.id, customer.name etc.... so we parse the JSON data first to be able to work with it how we want to
+      const customer = JSON.parse(this.responseText); //the reason we do this is to have access to the data. Turns json string data, into an oject so we can access the data like customer.name for ex. and work with it how we want to
 
       const output = `
       <ul>
