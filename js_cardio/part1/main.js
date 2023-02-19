@@ -1,9 +1,3 @@
-// CHALLENGE 2: VALIDATE A PALINDROME
-// Return true if palindrome and false if not
-// ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
-
-function isPalindrome(str) {}
-
 // CHALLENGE 3: REVERSE AN INTEGER
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
