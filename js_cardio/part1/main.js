@@ -1,9 +1,3 @@
-// CHALLENGE 3: REVERSE AN INTEGER
-// Return an integer in reverse
-// ex. reverseInt(521) === 125
-
-function reverseInt(int) {}
-
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
