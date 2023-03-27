@@ -9,5 +9,5 @@ function longestWord(sen) {
 }
 
 // Call Function
-const output = longestWord('Hello, my name is Brad');
+const output = longestWord('Hello, my name is Chris');
 console.log(output);
